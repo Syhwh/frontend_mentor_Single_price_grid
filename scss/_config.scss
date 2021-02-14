@@ -1,0 +1,24 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+$colors: (
+	primaryCyan: hsl(179, 62%, 43%),
+	primaryLightCyan:lighten(hsl(179, 62%, 43%),5%),
+	primaryBrightYellow: hsl(71, 73%, 54%),
+	neutralLightGray: hsl(204, 43%, 93%),
+	neutralGrayishBlue: hsl(218, 22%, 67%),
+	neutralLightGrayishBlue:lighten(hsl(218, 22%, 67%),10%),
+);
+
+@function color($color) {
+	@return map-get($colors, $color);
+}
