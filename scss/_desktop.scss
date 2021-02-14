@@ -1,8 +1,7 @@
-$desktopMax: 1440px;
-$desktop: 800px;
+$desktop: 1440px;
 
 @mixin desktop {
-	@media (min-width: #{$desktop}) and (max-width: #{$desktopMax}) {
+	@media  (min-width: #{$desktop}) {
 		@content;
 	}
 }
